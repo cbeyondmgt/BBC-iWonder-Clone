@@ -147,14 +147,14 @@
             }
             
             .hero {
-                
-                
+                height: 800px;
+                /*overflow: hidden;*/
             }
            
             .heroLogo {
                 
                 position: relative;
-                top: -550;
+                top: -575;
                 left: 15px;
                 width: 1200px;
                 margin-left: auto;
@@ -171,8 +171,8 @@
             .heroTitleDiv {
                 
                 position: relative;
-                top: -560px;
-                left: 15px;
+                top: -600px;
+                left: 10px;
                 width: 920px;
                 margin: auto;
                 padding: 0px 15px 25px 20px;
@@ -207,17 +207,7 @@
                 
             }
             
-            #sponsorTxt {
-                
-                font-weight: 600;
-                font-size: 13px;
-                letter-spacing: .5px;
-                padding-left: 10px;
-                line-height: 0;
-                
-            }
-            
-             #sponsorTxt2 {
+            .sponsorTxt4 {
                 
                 font-weight: 600;
                 font-size: 13px;
@@ -253,13 +243,34 @@
                 
             }
             
-            #leftBox {
+            #topBox {
                 
-                float: left;
                 width: 304px;
                 height: 304px;
-                background-color: black;
-                z-index: 3;
+                background-color: red;
+                background-image: url(images/hearts.jpg);
+                background-repeat: no-repeat;
+                background-size: 130%;
+                z-index: 1;
+                margin: 0;
+                padding: 0;
+                
+            }
+            
+            #topbox:hover {
+                
+                background-size: 100%;
+            }
+            
+            #bottomBox {
+                
+                position: relative;
+                top: -135px;
+                width: 304px;
+                height: 204px;
+                background-color: #41E1D5;
+                margin: 0;
+                
             }
             
             .boxOverlay {
@@ -270,11 +281,57 @@
                 width: 305px;
                 height: 304;
                 z-index: 2;
-                background-color: black;
+                background-color: #292F33;
                 opacity: .7;
                 -ms-transform: skew(15deg, 0);
                 -webkit-transform: skew(15deg, 0);
                 transform: skew(15deg, 0);
+            }
+            
+            .boxOverlay2 {
+
+                position: relative;
+                top: -50px;
+                width: 304px;
+                height: 104;
+                background-color: #41E1D5;
+                opacity: .9;
+                -ms-transform: skew(15deg, 0);
+                -webkit-transform: skew(15deg, 0);
+                transform: skewY(15deg);
+            }
+            
+            .boxOverlay3 {
+                
+                float: left;
+                position: relative;
+                left: -264px;
+                width: 305px;
+                height: 304;
+                z-index: 2;
+                background-color: #41E1D5;
+                opacity: .7;
+                -ms-transform: skew(15deg, 0);
+                -webkit-transform: skew(15deg, 0);
+                transform: skew(15deg, 0);
+            }
+            
+              .leftBox {
+                
+                float: left;
+                width: 304px;
+                height: 304px;
+                background-color: #292F33;
+                z-index: -1;
+            }
+            
+              .leftBoxInv {
+                
+                float: left;
+                width: 304px;
+                height: 304px;
+                background-color: #41E1D5;
+                z-index: 1;
             }
             
             #rightBox {
@@ -292,7 +349,27 @@
                 
             }
             
-            #rightbox:hover {
+            #rightBox2 {
+                
+                float: left;
+                position: relative;
+                left: -305px;
+                width: 304px;
+                height: 304px;
+                background-color: red;
+                background-image: url(images/brain1.jpg);
+                background-repeat: no-repeat;
+                background-size: 130%;
+                z-index: 1;
+                
+            }
+            
+            #rightBox:hover {
+                
+                background-size: 100%;
+            }
+            
+            #rightBox2:hover {
                 
                 background-size: 100%;
             }
@@ -300,21 +377,54 @@
             #collage1 {
                 
                 position: relative;
-                top: -250px;
-                left: 250px;
+                top: -180px;
+                left: -70px;
                 
             }
             
-            #contributorInner {
+            #collage2 {
+                
+                position: relative;
+                top: -360px;
+                left: 565;
+                height: 508px;
+                width: 304px;
+            }
+            #collage3 {
+                
+                position: relative;
+                top: -420;
+                left: 195px;
+                
+            }
+            
+            .contributorInner {
                 
                 position: relative;
                 top: 70px;
+                left: 15px;
+                z-index: 9;
+                
+            }
+            
+            #contributorInnerInv {
+                
+                position: relative;
+                top: -25px;
+                left: 15px;
+                z-index: 4;
+            }
+            
+            #contributorInnerInv2{
+                
+                position: relative;
+                top: 5px;
                 left: 15px;
                 z-index: 4;
                 
             }
             
-            #where {
+            .whiteTitle {
                 
                 position: relative;
                 font-size: 200%;
@@ -324,6 +434,44 @@
                 padding: 0 15px;
                 margin-top: 10;
                 z-index: 9;
+            }
+            
+            .blackTitle {
+                
+                width: 300px;
+                font-size: 200%;
+                color: black;
+                font-weight: bold;
+                opacity: .9;
+                padding: 20px 10px;
+                
+            }
+
+            #twitter {
+                
+                position: relative;
+                padding-top:;
+                top: -160px;
+                left: 260px;
+                background-color: #292F33;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                color: white;
+                text-align: center;
+            }
+            
+            #twitterContents {
+                
+                width: 100%;
+                margin: 25% 0;
+            }
+            
+            #how {
+                
+                position: relative;
+                top: -40px;
+                z-index: 3;
             }
           
         </style>
@@ -390,7 +538,8 @@
             <p id="ann1"> This page is no longer being updated</p>
         </div>
     </div>
-       
+    
+      
     <div class="hero">
     
         <img class="heroBkg" src="http://ichef.bbci.co.uk/images/ic/1024x576/p02d69p3.jpg">
@@ -401,7 +550,7 @@
 
             </div><!--/*heroLogo*/ -->
             
-                <a style="text-decoration:none;" href="#">
+            <a style="text-decoration:none;" href="#">
                 <div class="heroTitleDiv">
                     <h1 class="mainTitle">What's the right diet for you?</h1> 
   
@@ -413,19 +562,21 @@
                             
                         </div><!--/*hr*/-->
         
-                            <p><span id="sponsorTxt">In association with</span></p>
-                            <p><span id="sponsorTxt2">A Horizon Special</span></p>
+                            <p><span class="sponsorTxt4">In association with</span></p>
+                            <p><span class="sponsorTxt4">A Horizon Special</span></p>
 
                     </div><!--/*Sponsor Div*/-->
                 </div> <!--/*HeroTitleDiv*/-->
-    </div> <!--/*hero div */-->
-    </a><!--Closing tag for whole-div link-->
+            </a> <!--Div Link-->
+        </div><!--Hero Section-->
+     
     
-        <a href="#"><div id="collage1">
-            <div id="leftBox">
-                <p id="where">Where in Britain would you be happiest?</p>
-                <div id="contributorInner">
-                    <img class="contributor" src="images/sponsorlogo.jpg">
+        <a style="text-decoration:none;" href="#">
+            <div id="collage1">
+            <div class="leftBox">
+                <p class="whiteTitle">Where in Britain would you be happiest?</p>
+                <div class="contributorInner">
+                    <img class="contributor" src="images/staff.png">
                 <div id="hrInv">
                 </div><!--/*hr*/-->
                     <p><span class="sponsorTxtInv">Presented by</span></p>
@@ -438,6 +589,53 @@
                 <div id="rightBox">
                 </div><!--right box-->
         </div><!--collage1-->
+        </a>
+    <a href="#">
+        <div id="twitter">
+           <div id="twitterContents">
+        <img src="images/twitter.png" alt="Follow us on Twitter @BBCiWonder" width="30%">
+        <p>Follow<br>@BBCiWonder</p>
+            </div><!--twitterContents-->
+        </div><!--twitter div-->
+    </a><!--div link-->
+    
+    <a style="text-decoration:none;" href="#">
+            <div id="collage2">
+                <div id="topBox">
+                </div>
+                <div class="boxOverlay2">
+                </div>
+            <div id="bottomBox">
+                <p class="blackTitle">How healthy is<br>your relationship?</p>
+                <div id="contributorInnerInv">
+                    <img class="contributor" src="images/staff2.png">
+                    <div id="hr">
+                    </div>
+                    <p><span class="sponsorTxt4">Presented by</span></p>
+                    <p><span class="sponsorTxt4">Gemma Cairney</span></p>
+                </div><!--contributor innner-->
+                </div><!--bottom box-->
+        </div><!--collage2-->
+    </a><!--div link-->
+    
+    <a style="text-decoration:none;" href="#">
+            <div id="collage3">
+            <div class="leftBoxInv">
+                <p class="blackTitle" id="how">How does my memory measure up?</p>
+                <div id="contributorInnerInv2">
+                    <img class="contributor" src="images/staff3.png">
+                <div id="hr">
+                </div><!--/*hr*/-->
+                    <p><span class="sponsorTxt4">Presented by</span></p>
+                    <p><span class="sponsorTxt4">Rachel Riley</span></p>
+                </div><!--contriutorInner-->
+            </div><!--left box-->
+
+            <div class="boxOverlay3">
+            </div>
+                <div id="rightBox2">
+                </div><!--right box-->
+        </div><!--collage3-->
         </a>
     
     </body>
