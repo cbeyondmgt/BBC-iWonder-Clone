@@ -11,7 +11,9 @@
                 padding: 0px;
                 font-family: Helvetica; serif;
             }
-            
+            a:visited {
+                color: black;
+            }
             #topbar {
                 
                 width:1200px;
@@ -33,31 +35,43 @@
                 
                 float: left;
                 border-left: 1px #CCCCCC solid;
-                margin-right: 84px;
+                padding-right: 84px;
                 
             }
+            
+            #signin:hover {
+                
+                border-bottom: 3px red solid;
+            }
+            
         
             #signinLogo {
                 
                 float: left;
-                width: 25px;
-                margin: 6px 8px
+                width: 20px;
+                margin: 9px -6px 9px 8px;
             }
             
             .signIntxt {
                 
                 float: left;
-                font-weight: bold;
-                font-size: 14px;
+                font-size: 12px;
                 margin: 12px 12px;
             }
             
             .menuItem {
                 
-                
                 float: left;
                 border-left: 1px #CCCCCC solid;
                 
+            }
+            .menuItem2 {
+                
+                float: left;
+                font-weight:bold;
+                font-family: Arial;
+                font-size: 13px;
+                margin: 12px 12px;
             }
             
             .search {
@@ -67,7 +81,7 @@
                 height: 40px;
                 
             }
-            
+
             .menuItem a {
                 
                 text-decoration: none;
@@ -92,7 +106,7 @@
                 font-size: 13px;
                 height: 24;
                 background-color: #E5E5E5;
-                margin-top: 11px;
+                margin-top: 8px;
                 margin-left: 11px;
                 border: 0px;
                 padding: 5px;
@@ -110,7 +124,7 @@
             #announcement {
                 
                 height: 60px;
-                width: auto;
+                width: 100%;
                 background-color: #DCDCDC;
                 
             }
@@ -140,7 +154,7 @@
             .heroLogo {
                 
                 position: relative;
-                top: 20;
+                top: -550;
                 left: 15px;
                 width: 1200px;
                 margin-left: auto;
@@ -149,32 +163,31 @@
             
             .heroBKG {
                 
-                position: fixed;
-                width: 110%;
+                width: 100%;
                 height: 75%;
                 
             }
             
-            .heroTitle {
+            .heroTitleDiv {
                 
                 position: relative;
-                top: 0px;
+                top: -560px;
                 left: 15px;
                 width: 920px;
                 margin: auto;
-                padding: 0px 20px 20px 20px;
+                padding: 0px 15px 25px 20px;
                 background-color: #41E1D5;
                 opacity: .9;
                 
                 
             }
             
-            
             .mainTitle {
                 
                 font-size: 350%;
                 color: #000000;
                 opacity: .9;
+                padding-top: 5px;
                 
             }
             
@@ -182,6 +195,15 @@
                 
                 border-radius: 50%;
                 float: left;
+                width: 67px
+                
+            }
+            
+            .contributor {
+                
+                border-radius: 50%;
+                float: left;
+                width: 67px
                 
             }
             
@@ -191,7 +213,6 @@
                 font-size: 13px;
                 letter-spacing: .5px;
                 padding-left: 10px;
-                padding-top: 0px;
                 line-height: 0;
                 
             }
@@ -208,12 +229,102 @@
             
             #hr {
                 
-                padding-left: 10px;
-                font-size: 14px;
-                font-weight: 
+                width: 30px;
+                margin-left: 75px;
+                border-top: 2px black solid
                 
             }
-
+            
+            .sponsorTxtInv {
+                
+                color: white;
+                font-size: 13px;
+                letter-spacing: .5px;
+                padding-left: 10px;
+                line-height: 0;
+                
+            }
+            
+            #hrInv {
+                
+                width: 30px;
+                margin-left: 75px;
+                border-top: 2px white solid;
+                
+            }
+            
+            #leftBox {
+                
+                float: left;
+                width: 304px;
+                height: 304px;
+                background-color: black;
+                z-index: 3;
+            }
+            
+            .boxOverlay {
+                
+                float: left;
+                position: relative;
+                left: -264px;
+                width: 305px;
+                height: 304;
+                z-index: 2;
+                background-color: black;
+                opacity: .7;
+                -ms-transform: skew(15deg, 0);
+                -webkit-transform: skew(15deg, 0);
+                transform: skew(15deg, 0);
+            }
+            
+            #rightBox {
+                
+                float: left;
+                position: relative;
+                left: -305px;
+                width: 304px;
+                height: 304px;
+                background-color: red;
+                background-image: url(images/birds.jpg);
+                background-repeat: no-repeat;
+                background-size: 130%;
+                z-index: 1;
+                
+            }
+            
+            #rightbox:hover {
+                
+                background-size: 100%;
+            }
+            
+            #collage1 {
+                
+                position: relative;
+                top: -250px;
+                left: 250px;
+                
+            }
+            
+            #contributorInner {
+                
+                position: relative;
+                top: 70px;
+                left: 15px;
+                z-index: 4;
+                
+            }
+            
+            #where {
+                
+                position: relative;
+                font-size: 200%;
+                color: white;
+                font-weight: bold;
+                opacity: .9;
+                padding: 0 15px;
+                margin-top: 10;
+                z-index: 9;
+            }
           
         </style>
     
@@ -224,40 +335,40 @@
         
         <div id="topbar">
             
-            <img class="logo" src="images/logo.png">
+            <a href="#"><img class="logo" src="images/logo.png"></a>
         
         <div id="signin">
             
             <img id="signinLogo" src="images/usericon.png">
-            <p class="signIntxt">Sign In</p>
+            <p class="menuItem2">Sign In</p>
         </div>
             
         <div class="menuItem">
-            <a class="signIntxt" href="#">News</a>
+            <a class="menuItem2" href="#">News</a>
         </div>
         
         <div class="menuItem">
-            <a class="signIntxt" href="#">Sport</a>
+            <a class="menuItem2" href="#">Sport</a>
         </div>
             
         <div class="menuItem">
-            <a href="#" class="signIntxt">Weather</a>
+            <a href="#" class="menuItem2">Weather</a>
         </div>
             
         <div class="menuItem">
-            <a href="#" class="signIntxt">Shop</a>
+            <a href="#" class="menuItem2">Shop</a>
         </div>
         
         <div class="menuItem">
-            <a href="#" class="signIntxt">Earth</a>
+            <a href="#" class="menuItem2">Earth</a>
         </div>
             
         <div class="menuItem">
-            <a href="#" class="signIntxt">Travel</a>
+            <a href="#" class="menuItem2">Travel</a>
         </div>
             
         <div class="menuItem" id="menuItemlast">
-            <a href="#" class="signIntxt">More</a>
+            <a href="#" class="menuItem2">More</a>
         </div>
             
         <div class="search">
@@ -276,37 +387,59 @@
     <div id="announcement">
         
         <div class="annTxtdiv">
-        <p id="ann1"> This page is no longer being updated</p>
+            <p id="ann1"> This page is no longer being updated</p>
         </div>
     </div>
        
     <div class="hero">
     
-    <img class="heroBkg" src="http://ichef.bbci.co.uk/images/ic/1024x576/p02d69p3.jpg">
+        <img class="heroBkg" src="http://ichef.bbci.co.uk/images/ic/1024x576/p02d69p3.jpg">
         
-    <div class="heroLogo">
-        
-    <img src="http://kandl-genres.files.bbci.co.uk/kandl-genres/1199-1/images/logos/iwonder-logo.svg" width="150px">
-        
-    </div>
-        
-    <div class= "heroTitle">
-        
-    <h1 class="mainTitle">What's the right diet for you?</h1> 
-  
-        <div class="sponsor">
-        
-            <img id="sponsorLogo" src="images/sponsorlogo.jpg">
-            <span id="hr">_____</span>
-            <p><span id="sponsorTxt">In association with</span></p>
-            <p><span id="sponsorTxt2">A Horizon Special</span></p>
+            <div class="heroLogo">
+
+                <img src="http://kandl-genres.files.bbci.co.uk/kandl-genres/1199-1/images/logos/iwonder-logo.svg" width="150px">
+
+            </div><!--/*heroLogo*/ -->
             
-        </div>
+                <a style="text-decoration:none;" href="#">
+                <div class="heroTitleDiv">
+                    <h1 class="mainTitle">What's the right diet for you?</h1> 
+  
+                    <div class="sponsor">
         
-    </div>
+                        <img id="sponsorLogo" src="images/sponsorlogo.jpg">
         
-    </div>
+                        <div id="hr">
+                            
+                        </div><!--/*hr*/-->
         
+                            <p><span id="sponsorTxt">In association with</span></p>
+                            <p><span id="sponsorTxt2">A Horizon Special</span></p>
+
+                    </div><!--/*Sponsor Div*/-->
+                </div> <!--/*HeroTitleDiv*/-->
+    </div> <!--/*hero div */-->
+    </a><!--Closing tag for whole-div link-->
+    
+        <a href="#"><div id="collage1">
+            <div id="leftBox">
+                <p id="where">Where in Britain would you be happiest?</p>
+                <div id="contributorInner">
+                    <img class="contributor" src="images/sponsorlogo.jpg">
+                <div id="hrInv">
+                </div><!--/*hr*/-->
+                    <p><span class="sponsorTxtInv">Presented by</span></p>
+                    <p><span class="sponsorTxtInv">David Shukman</span></p>
+                </div><!--contriutorInner-->
+            </div><!--left box-->
+
+            <div class="boxOverlay">
+            </div>
+                <div id="rightBox">
+                </div><!--right box-->
+        </div><!--collage1-->
+        </a>
+    
     </body>
 
 </html>
