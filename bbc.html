@@ -10,8 +10,9 @@
                 max-width: 1440px;
                 margin: 0px;
                 padding: 0px;
-                font-family: Helvetica; serif;
-                overflow: auto;
+                font-family: arial, Helvetica, sans-serif;
+                
+                
             }
             a:visited {
                 color: black;
@@ -157,8 +158,8 @@
                 
                 position: relative;
                 top: -500;
-                left: 15px;
-                max-width: 1200px;
+                left: -85px;
+                max-width: 1100px;
                 margin-left: auto;
                 
             }
@@ -197,7 +198,6 @@
                 
                 position: relative;
                 top: 15;
-                
                 
             }
             
@@ -261,6 +261,7 @@
                 background-image: url(images/hearts.jpg);
                 background-repeat: no-repeat;
                 background-size: 130%;
+                background-position: top;
                 z-index: 1;
                 margin: 0;
                 padding: 0;
@@ -275,6 +276,7 @@
                 background-image: url(images/candles.jpg);
                 background-repeat: no-repeat;
                 background-size: 130%;
+                background-position: top;
                 z-index: 1;
                 margin: 0;
                 padding: 0;
@@ -288,6 +290,7 @@
                 background-color: red;
                 background-image: url(images/scan.jpg);
                 background-repeat: no-repeat;
+                background-position: top;
                 background-size: 130%;
                 z-index: 1;
                 
@@ -413,6 +416,7 @@
                 background-image: url(images/birds.jpg);
                 background-repeat: no-repeat;
                 background-size: 130%;
+                background-position: top;
                 z-index: 1;
                 
             }
@@ -428,6 +432,7 @@
                 background-image: url(images/brain1.jpg);
                 background-repeat: no-repeat;
                 background-size: 130%;
+                background-position: top;
                 z-index: 1;
                 
             }
@@ -447,8 +452,6 @@
                 position: relative;
                 top: -180px;
                 left: -70px;
-                
-                
             }
             
             #collage2 {
@@ -465,7 +468,6 @@
                 width: 1000px;
                 top: -420;
                 left: 195px;
-                
             }
             
             #collage4 {
@@ -560,7 +562,89 @@
                 z-index: 3;
             }
             
+            #middle {
+                
+                position: relative;
+                bottom: 1290;
+                width: 720px;
+                background: black;
+                padding: 0px 352px 0px 372px;
+                margin-bottom: 0;
+                
+            }
             
+            #middleContent {
+                color: white;
+                height: 620;
+                margin-bottom: 0;
+                
+            }
+            
+            #hr2 {
+                
+                position: relative;
+                top: 60px;
+                width: 30px;
+                border-bottom: 2px #41E1D5 solid;
+                padding: 4px 0;
+                
+                
+            }
+            
+            #science {
+                
+                
+                font-size: 14px;
+                letter-spacing: .5px;
+            }
+            
+            .bigText {
+                
+                font-family: 'CuriousSans-Bold', Arial, Helvetica, freesans, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                font-weight: normal;
+                color: #fff;
+                font-size: 3.6rem;
+                font-weight: bolder;
+                line-height: 3.6rem;
+                padding-top: 26px;
+                
+            }
+            
+            #arrow {
+                
+                width: 15px;
+                height: 15px;
+                margin-top: -30px;
+                float: left;
+                color: black;
+                font-weight: bolder;
+                background-color: cyan;
+                font-size: 12px;
+                text-align: center;''
+                
+            }
+            
+            #arrowTxt {
+                
+                float: left;
+                margin-top: -45px;
+                margin-left: 17px;
+                padding: 17px 5px;
+                font-size: 14px;
+                letter-spacing: .5;
+            
+            }
+            
+            #arrowTxt a{
+                
+                
+                font-family: helvetica;
+                text-decoration: none;
+                color: white!important;
+            }
+            
+           
           
         </style>
     
@@ -756,7 +840,17 @@
                 </div><!--contributor innner-->
                 </div><!--bottom box-->
         </div><!--collage2-->
-    </div><!--main-->
+   </div><!--main-->
+    <div id="middle">
+        <div id="middleContent">
+            <div id="hr2">
+                <span id="science">Science</span>
+            </div>
+             <p class="bigText">One in 250 million of your father’s sperm managed to navigate a perilous journey to reach your mother’s egg – kick starting the process that made you.</p>
+                <div id="arrow">&gt;</div>
+                    <div id="arrowTxt"><span><a href="#">What shapes your identity before birth?</a></span></div>
+        </div>
+    </div>
     </body>
 
 </html>
