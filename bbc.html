@@ -7,16 +7,18 @@
             
             body {
                 
+                max-width: 1440px;
                 margin: 0px;
                 padding: 0px;
                 font-family: Helvetica; serif;
+                overflow: auto;
             }
             a:visited {
                 color: black;
             }
             #topbar {
                 
-                width:1200px;
+                max-width:1200px;
                 height: 14px;
                 background-color: white;
                 margin-top: 0px;
@@ -124,7 +126,7 @@
             #announcement {
                 
                 height: 60px;
-                width: 100%;
+                width: 1440px;
                 background-color: #DCDCDC;
                 
             }
@@ -141,29 +143,29 @@
             
             .annTxtdiv {
                 
-                width: 1200px;
+                max-width: 1200px;
                 margin-left: auto;
                 
             }
             
             .hero {
-                height: 800px;
-                /*overflow: hidden;*/
+                max-height: 700px;
+                max-width: 1440px;
             }
            
             .heroLogo {
                 
                 position: relative;
-                top: -575;
+                top: -500;
                 left: 15px;
-                width: 1200px;
+                max-width: 1200px;
                 margin-left: auto;
                 
             }
             
             .heroBKG {
                 
-                width: 100%;
+                width: 1440px;
                 height: 75%;
                 
             }
@@ -171,7 +173,7 @@
             .heroTitleDiv {
                 
                 position: relative;
-                top: -600px;
+                top: -520px;
                 left: 10px;
                 width: 920px;
                 margin: auto;
@@ -188,6 +190,14 @@
                 color: #000000;
                 opacity: .9;
                 padding-top: 5px;
+                
+            }
+            
+            .main {
+                
+                position: relative;
+                top: 15;
+                
                 
             }
             
@@ -257,7 +267,43 @@
                 
             }
             
+            #topBox2 {
+                
+                width: 304px;
+                height: 304px;
+                background-color: red;
+                background-image: url(images/candles.jpg);
+                background-repeat: no-repeat;
+                background-size: 130%;
+                z-index: 1;
+                margin: 0;
+                padding: 0;
+                
+            }
+            
+            #topBox3 {
+                
+                width: 304px;
+                height: 304px;
+                background-color: red;
+                background-image: url(images/scan.jpg);
+                background-repeat: no-repeat;
+                background-size: 130%;
+                z-index: 1;
+                
+            }
+            
             #topbox:hover {
+                
+                background-size: 100%;
+            }
+            
+             #topbox2:hover {
+                
+                background-size: 100%;
+            }
+            
+            #topbox3:hover {
                 
                 background-size: 100%;
             }
@@ -270,7 +316,16 @@
                 height: 204px;
                 background-color: #41E1D5;
                 margin: 0;
+            }
+            
+            #bottomBox2 {
                 
+                position: relative;
+                top: -135px;
+                width: 304px;
+                height: 204px;
+                background-color: #9EE52C;
+                margin: 0;
             }
             
             .boxOverlay {
@@ -314,6 +369,19 @@
                 -ms-transform: skew(15deg, 0);
                 -webkit-transform: skew(15deg, 0);
                 transform: skew(15deg, 0);
+            }
+            
+            .boxOverlay4 {
+                
+                position: relative;
+                top: -50px;
+                width: 304px;
+                height: 104;
+                background-color: #9EE52C;
+                opacity: .9;
+                -ms-transform: skew(15deg, 0);
+                -webkit-transform: skew(15deg, 0);
+                transform: skewY(15deg);
             }
             
               .leftBox {
@@ -380,6 +448,7 @@
                 top: -180px;
                 left: -70px;
                 
+                
             }
             
             #collage2 {
@@ -393,9 +462,26 @@
             #collage3 {
                 
                 position: relative;
+                width: 1000px;
                 top: -420;
                 left: 195px;
                 
+            }
+            
+            #collage4 {
+                
+                width:304px;
+                position: relative;
+                left: 885px;
+                top: -1190px
+            }
+            
+            #collage5 {
+                
+                width:304px;
+                position: relative;
+                left: 885px;
+                top: -1309px
             }
             
             .contributorInner {
@@ -473,6 +559,8 @@
                 top: -40px;
                 z-index: 3;
             }
+            
+            
           
         </style>
     
@@ -550,7 +638,7 @@
 
             </div><!--/*heroLogo*/ -->
             
-            <a style="text-decoration:none;" href="#">
+            
                 <div class="heroTitleDiv">
                     <h1 class="mainTitle">What's the right diet for you?</h1> 
   
@@ -567,11 +655,11 @@
 
                     </div><!--/*Sponsor Div*/-->
                 </div> <!--/*HeroTitleDiv*/-->
-            </a> <!--Div Link-->
+            
         </div><!--Hero Section-->
      
     
-        <a style="text-decoration:none;" href="#">
+        <div class="main">
             <div id="collage1">
             <div class="leftBox">
                 <p class="whiteTitle">Where in Britain would you be happiest?</p>
@@ -589,17 +677,14 @@
                 <div id="rightBox">
                 </div><!--right box-->
         </div><!--collage1-->
-        </a>
-    <a href="#">
+    
         <div id="twitter">
            <div id="twitterContents">
         <img src="images/twitter.png" alt="Follow us on Twitter @BBCiWonder" width="30%">
         <p>Follow<br>@BBCiWonder</p>
             </div><!--twitterContents-->
         </div><!--twitter div-->
-    </a><!--div link-->
     
-    <a style="text-decoration:none;" href="#">
             <div id="collage2">
                 <div id="topBox">
                 </div>
@@ -616,9 +701,9 @@
                 </div><!--contributor innner-->
                 </div><!--bottom box-->
         </div><!--collage2-->
-    </a><!--div link-->
     
-    <a style="text-decoration:none;" href="#">
+    
+
             <div id="collage3">
             <div class="leftBoxInv">
                 <p class="blackTitle" id="how">How does my memory measure up?</p>
@@ -636,8 +721,42 @@
                 <div id="rightBox2">
                 </div><!--right box-->
         </div><!--collage3-->
-        </a>
+        
     
+            <div id="collage4">
+                <div id="topBox2">
+                </div>
+                <div class="boxOverlay4">
+                </div>
+            <div id="bottomBox2">
+                <p class="blackTitle">What's your real age?</p>
+                <div id="contributorInnerInv">
+                    <img class="contributor" src="images/staff4.png">
+                    <div id="hr">
+                    </div>
+                    <p><span class="sponsorTxt4">In association with</span></p>
+                    <p><span class="sponsorTxt4">How To Stay Young</span></p>
+                </div><!--contributor innner-->
+                </div><!--bottom box-->
+        </div><!--collage2-->
+    
+            <div id="collage5">
+                <div id="topBox3">
+                </div>
+                <div class="boxOverlay4">
+                </div>
+            <div id="bottomBox2">
+                <p class="blackTitle">What makes a psychopath?</p>
+                <div id="contributorInnerInv">
+                    <img class="contributor" src="images/staff5.png">
+                    <div id="hr">
+                    </div>
+                    <p><span class="sponsorTxt4">Presented by</span></p>
+                    <p><span class="sponsorTxt4">Claudia Hammond</span></p>
+                </div><!--contributor innner-->
+                </div><!--bottom box-->
+        </div><!--collage2-->
+    </div><!--main-->
     </body>
 
 </html>
